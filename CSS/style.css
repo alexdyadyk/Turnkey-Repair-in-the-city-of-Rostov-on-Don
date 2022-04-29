@@ -625,7 +625,7 @@ input[placeholder]{
 /* types-request */
 
 .types-request{
-   margin-top: 311px;
+   margin-top: 124px;
 }
 
 .request-row{
@@ -679,15 +679,112 @@ input[placeholder]{
 
 
 
+.request-form{
+   width: 506px;
+   height: 509px;
+   background: #131313;
+   box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+   margin: 116px 0 7px 31px;
+   padding: 28px 49px 27px;
+
+}
 
 
+.request-form__header{
+   width: 267px;
+   font-family: var(--main-ff);
+   font-style: normal;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 26px;
+   text-align: center;
+   color: #FFFFFF;
+   margin-bottom: 39px;
+
+}
 
 
+.request-form-name__text, .request-form-phone__text, .request-form-email__text{
+   font-family: var(--main-ff);
+   font-style: normal;
+   font-weight: 400;
+   font-size: 13px;
+   line-height: 21px;
+   color: rgba(255, 255, 255, 0.5);
+   margin-bottom: 7px;
+}
+
+.request-form-name__input, .request-form-phone__input, .request-form-email__input{
+   background: #131313;
+   border:none;
+   margin-bottom: 3px;
+}
+
+.request-form-name__input[placeholder], .request-form-phone__input[placeholder], .request-form-email__input[placeholder]{
+   font-family: var(--main-ff);
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 23px;
+   color: #FFFFFF;
+}
+
+.request-form-checkbox{
+   display: block;
+}
+
+.request-form-checkbox__text{
+   font-family: var(--main-ff);
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 163.68%;
+   color: #FFFFFF;
+}
+
+.request-button{
+   width: 213px;
+   height: 51px;
+   border:none;
+   background: var(--button-bg-color);
+   box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+   font-family: var(--main-ff);
+   font-style: normal;
+   font-weight: 400;
+   font-size: 13px;
+   line-height: 21px;
+   text-align: center;
+   text-transform: uppercase;
+   color: #FFFFFF;
+   margin-top: 39px;
+   margin-left: 196px;
+   cursor: pointer;
+}
+
+.request-sale{
+   margin:8px 0 0 490px;
+}
+
+.request-sale-row{
+   width: 340px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.request-sale-text{
+   font-family: var(--main-ff);
+   font-style: normal;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 26px;
+   color: #E3B873;
+   text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+
+}
 
 
-
-
-
+/* 1 */
 
 /* header and footer*/
 
