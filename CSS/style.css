@@ -154,6 +154,7 @@ main{
 }
 
 .repair-header{
+   width: 576px;
    font-family: var(--second-ff);
    font-style: normal;
    font-weight: 400;
@@ -475,13 +476,14 @@ button.repair-buttons__left, button.repair-buttons__right{
    border:none;
 }
 
-.form-item_name[placeholder], .form-item_phone[placeholder]{
+.form-item_name::placeholder, .form-item_phone::placeholder{
    font-family: var(--main-ff);
    font-style: normal;
    font-weight: 400;
    font-size: 14px;
    line-height: 23px;
    color: #363636;
+   
 }
 
 .control-button{
@@ -746,7 +748,7 @@ button.repair-buttons__left, button.repair-buttons__right{
    margin-bottom: 3px;
 }
 
-.request-form-name__input[placeholder], .request-form-phone__input[placeholder], .request-form-email__input[placeholder]{
+.request-form-name__input::placeholder, .request-form-phone__input::placeholder, .request-form-email__input::placeholder{
    font-family: var(--main-ff);
    font-style: normal;
    font-weight: 400;
@@ -1087,16 +1089,14 @@ button.repair-buttons__left, button.repair-buttons__right{
    margin-bottom: 3px;
 }
 
-/* .feedback-form-name__input[placeholder], .feedback-form-phone__input[placeholder], .feedback-form-question__input[placeholder]{
+.feedback-form-name__input::placeholder, .feedback-form-phone__input::placeholder, .feedback-form-question__input::placeholder{
    font-family: var(--main-ff);
    font-style: normal;
    font-weight: 400;
    font-size: 14px;
    line-height: 23px;
    color: #FFFFFF;
-
-   почему не работает?
-} */
+}
 
 
 
@@ -1192,12 +1192,13 @@ button.repair-buttons__left, button.repair-buttons__right{
 
 
 
-/* header and footer*/
 
-/* @media (max-width:375px) {
+
+@media (max-width:375px) {
    
+   /* header */
 
-   .header, .footer{
+   .header{
       height: 87px;
       padding: 23px 18px;
       display: flex;
@@ -1205,8 +1206,8 @@ button.repair-buttons__left, button.repair-buttons__right{
       align-items:center;
    }
 
-   .header-logo, .footer-logo{
-      margin: 0 56px 0 0;
+   .header-logo{
+      margin:0 14.93vw 0 0;
    }
 
    .header-nav, .button-header{
@@ -1217,7 +1218,74 @@ button.repair-buttons__left, button.repair-buttons__right{
    .header-logo{
       font-size: 11px;
    }
-} */
+
+   /* section-main */
+
+   .section-main{
+      height: 476px;
+   }
+
+   .repair-header{
+      width: 100%;
+      max-width: 329px;
+      font-family: var(--second-ff);
+      font-style: normal;
+      font-weight: 400;
+      font-size: 23px;
+      line-height: 132.83%;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      margin-bottom: 16px;
+   }
+
+   .repair-main{
+      padding: 85px 18px 61px;
+   }
+
+   .repair-text{
+      width: 100%;
+      max-width: 339px;
+      font-family:var(--main-ff);
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 135.84%;
+      color: #FFFFFF;
+      margin-bottom: 32px;
+   }
+
+   .repair-buttons{
+      display: block;
+      text-align: center;
+   }
+
+   button.repair-buttons__left, button.repair-buttons__right{
+      width: 100%;
+      max-width: 338px;
+      height: 51px;
+      border: 1px solid #FFFFFF;
+      border-radius: 2px;
+      font-family: var(--main-ff);
+      font-style: italic;
+      font-weight: 400;
+      font-size: 11px;
+      line-height: 15px;
+      text-align: center;
+      color: #FFFFFF;
+      background:rgba(0, 0, 0, 0);
+      cursor:pointer;
+      transition: all .4s;
+   }
+   
+   .repair-buttons__left{
+      margin: 0 0 26px 0;
+   }
+   
+   .repair-buttons__right{
+      margin: 0;
+   }
+
+}
 
 
 
