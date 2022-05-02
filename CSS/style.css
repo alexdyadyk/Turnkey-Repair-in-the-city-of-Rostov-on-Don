@@ -26,19 +26,25 @@
    text-decoration: none;
 }
 
+
 img{
    vertical-align: top;
 }
 
+html, body{
+   height: 100vh;
+}
+
 .wrapper{
+   min-height: 100vh;
    display: flex;
    flex-direction: column;
 }
 
-main{
+.main{
    flex: 1 1 auto;
-   min-height: 100vh;
 }
+
 
 .container{
    max-width: 1236px;
@@ -352,12 +358,13 @@ button.repair-buttons__left, button.repair-buttons__right{
 /* section-control */
 
 .section-control{
-   margin-top: -257px;
+   margin-top: -317px;
 }
 
 .control-main{
    display: flex;
    flex-direction: column;
+   position: relative;
 }
 
 .control-header{
@@ -381,20 +388,35 @@ button.repair-buttons__left, button.repair-buttons__right{
    margin: 0 10px;
 }
 
+.control-image-main{
+   position: relative;
+}
+
 .control-image{
    margin-top: 31px;
    margin-bottom: 62px;
    width: 817px;
    height: 434px;
-   background:url('../Image/control/Mask\ Group\ control.jpg');
+   background:url('../Image/control/image\ 6.png');
    background-size:cover;
    position: relative;
 }
 
 .control_play{
    position: absolute;
-   top: 174px;
-   left: 367px;  
+   top: 145px;
+   left: 330px;  
+   z-index: 1;
+}
+
+.background-control-image{
+   content: '';
+   position: absolute;
+   top:0;
+   right: 0;
+   bottom:0;
+   left:0;
+   background:rgba(0, 0, 0, 0.7);
 }
 
 .control-line{
@@ -453,7 +475,7 @@ button.repair-buttons__left, button.repair-buttons__right{
    border:none;
 }
 
-input[placeholder]{
+.form-item_name[placeholder], .form-item_phone[placeholder]{
    font-family: var(--main-ff);
    font-style: normal;
    font-weight: 400;
@@ -929,7 +951,8 @@ input[placeholder]{
 .section-clients{
    width: 100%;
    height: 1105px;
-   background:url('../Image/clients/clients-background.png')
+   background:url('../Image/clients/clients-background.png');
+   background-size:contain;
 }
 
 .clients-row{
@@ -989,6 +1012,7 @@ input[placeholder]{
    border:none;
    margin: 63px 0 -27px -20px;
    z-index: 1;
+   cursor: pointer;
 }
 
 .clients-button__main{
@@ -1006,6 +1030,167 @@ input[placeholder]{
    text-transform: uppercase;
    color: #FFFFFF;
 }
+
+
+
+/* section-feedback */
+
+.section-feedback{
+   width: 100%;
+   height: 954px;
+   background:url('../Image/feedback/image\ 7.2.png');
+   position: relative;
+}
+
+.feedback-row{
+   position: relative;
+   z-index: 1;
+}
+
+
+.feedback-form__header{
+   font-family: var(--second-ff);
+   font-style: normal;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 28px;
+   text-align: center;
+   text-transform: uppercase;
+   color: #FFFFFF;
+   margin-bottom: 43px;
+}
+
+.feedback-form__row{
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 30px;
+}
+
+
+.feedback-form__name{
+   margin-right: 54px;
+}
+
+.feedback-form-name__text, .feedback-form-phone__text, .feedback-form-question__text{
+   font-family: var(--main-ff);
+   font-style: normal;
+   font-weight: 400;
+   font-size: 13px;
+   line-height: 21px;
+   color: rgba(255, 255, 255, 0.5);
+   margin-bottom: 7px;
+}
+
+.feedback-form-name__input, .feedback-form-phone__input, .feedback-form-question__input{
+   background: #181818;
+   border:none;
+   margin-bottom: 3px;
+}
+
+/* .feedback-form-name__input[placeholder], .feedback-form-phone__input[placeholder], .feedback-form-question__input[placeholder]{
+   font-family: var(--main-ff);
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 23px;
+   color: #FFFFFF;
+
+   почему не работает?
+} */
+
+
+
+.feedback-form__question{
+   margin-bottom: 36px;
+}
+
+.feedback-form-checkbox{
+   margin-bottom: 30px;
+}
+
+.feedback-form-checkbox__text{
+   font-family: var(--main-ff);
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 163.68%;
+   color: #FFFFFF;
+}
+
+.feedback-button{
+   width: 200px;
+   height: 51px;
+   background:var(--button-bg-color);
+   font-family: var(--main-ff);
+   font-style: normal;
+   font-weight: 400;
+   font-size: 13px;
+   line-height: 27px;
+   text-align: center;
+   text-transform: uppercase;
+   color: #FFFFFF;
+   cursor: pointer;
+}
+
+
+
+.feedback-main{
+   padding: 52px 260px 65px;
+   margin-top: -222px;
+}
+
+.feedback-form{
+   width: 883px;
+   height: 445px;
+   background: #181818;
+   position: relative;
+   z-index: 1;
+   top: -222px;
+   padding: 34px 181px;
+}
+
+.feedback-form-main{
+   display: flex;
+   flex-direction: column;
+}
+
+
+.feedback-main__map{
+   text-align: center;
+}
+
+.feedback-main__header{
+   width: 589px;
+   font-family: var(--main-ff);
+   font-style: normal;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 28px;
+   text-align: center;
+   text-transform: uppercase;
+   color: var(--text-color);
+   margin-bottom: 26px;
+}
+
+.feedback-main__social{
+   width: 71px;
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 43px;
+}
+
+
+.background-feedback{
+   content: '';
+   position: absolute;
+   top:0;
+   right: 0;
+   bottom:0;
+   left:0;
+   background:rgba(0, 0, 0, 0.7);
+}
+
+
 
 /* header and footer*/
 
