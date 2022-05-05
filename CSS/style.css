@@ -513,15 +513,17 @@ button.repair-buttons__left, button.repair-buttons__right{
    display: flex;
    justify-content: center;
    align-items:center;
+   margin-bottom: 148px;
+}
+
+.form-checkbox__subbutton{
+   display: none;
 }
 
 .label{
    cursor: pointer;
 }
 
-.form-checkbox{
-   margin-bottom: 148px;
-}
 
 .checkbox{
    display: none;
@@ -580,6 +582,7 @@ button.repair-buttons__left, button.repair-buttons__right{
 .types-row{
    display: flex;
    justify-content: space-between;
+   flex-wrap: wrap;
 }
 
 
@@ -1387,12 +1390,10 @@ button.repair-buttons__left, button.repair-buttons__right{
       margin-bottom: 19px;
    }
 
-
-
-
    .control-image{
       max-width: 90.67vw;
       max-height: 55.20vw;
+      margin-bottom: 28px;
    }
 
    .control_play{
@@ -1405,6 +1406,10 @@ button.repair-buttons__left, button.repair-buttons__right{
    .control-play__img{
       width: 37px;
       max-width: 100%;
+   }
+
+   .control-line{
+      margin-bottom: 21px;
    }
 
    .control-text{
@@ -1420,13 +1425,12 @@ button.repair-buttons__left, button.repair-buttons__right{
 
    .form-items_row{
       display: block;
-      
-      /* margin-bottom: 37px; */
    }
 
    .form-item_supname, .form-item_supphone{
       color: rgba(255, 255, 255, 0.5);
    }
+
    
    .form-item_name, .form-item_phone{
       margin: 0 0 8px 0;
@@ -1439,8 +1443,103 @@ button.repair-buttons__left, button.repair-buttons__right{
       background: #131313;
       
    }
+
+   .form-checkbox{
+      margin-bottom: 0;
+   }
    
-} 
+   .form-item__button{
+      display: none;
+   }
+
+   .text{
+      width: 69.07vw;
+      font-size: 14px;
+      line-height: 163.68%;
+      color: #FFFFFF;
+   }
+
+   .form-checkbox__subbutton{
+      display: block;
+      text-align: center;
+   }
+
+   .control-subbutton{
+      width: 90.67vw;
+      height: 13.60vw;
+      background: var(--button-bg-color);
+      box-shadow: 0px 10px 20px rgba(227, 184, 115, 0.1);
+      font-family: var(--main-ff);
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 27px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      border:none;
+      margin-top: 60px;
+   }
+
+   /* section-types */
+
+   .section-types{
+      height: 2030px;
+      text-align: center;
+   }
+
+   .types-main{
+      padding: 83px 18px 266px;
+   }
+
+   .types-header{
+      font-size: 22px;
+      line-height: 138.6%;
+      margin-bottom: 17px;
+   }
+
+   .types-logo{
+      margin-bottom: 40px;
+   }
+
+   .types-discription, .types-discription_list{
+      text-align: left;
+   }
+
+
+   .types-row_item{
+      text-align: center;
+   }
+
+   .types-row_item{
+      margin-bottom: 15.73vw;
+   }
+
+   .types-item_backgroundleft, .types-item_backgroundmidlle, .types-item_backgroundright{
+      width: 90.67vw;
+      margin-bottom: 177px;
+   }
+
+   .types-item_discription{
+      width: 270px;
+      height: 241px;
+      margin-left: 0;
+      margin-top: -340px;
+   }
+
+
+   .types-discription_list li{
+      line-height: 169.8%;;
+   }
+
+   .types-button{
+      width: 50.67vw;
+      height: 10.67vw;
+      font-size: 15px;
+      line-height: 138.6%;
+      margin: 5.33vw 0 0 -8vw;
+   }
 
 
 
+}
