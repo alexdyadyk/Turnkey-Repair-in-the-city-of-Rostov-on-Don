@@ -75,7 +75,7 @@ html, body{
 }
 
 .header-logo, .footer-logo{
-   margin: 0 95px 0 0;
+   margin: 0 122px 0 -10px;
    letter-spacing: 0.2px;
 }
 
@@ -134,7 +134,7 @@ html, body{
 }
 
 .header-tel{
-   margin: 0 0 0 1.77%;
+   margin: 0 -4px 0 1.77%;
 }
 
 .header-tel a{
@@ -161,7 +161,7 @@ button.button-header, button.button-footer{
    color: #FFFFFF;
    cursor:pointer;
    padding: 13px 2.66%;
-   margin: 0 0 0 4.04%;
+   margin: 0 -8px 0 4.04%;
 }
 
 .header-burger{
@@ -200,7 +200,7 @@ main{
    text-transform: uppercase;
    color: #FFFFFF;
    margin-bottom: 19px;
-   word-spacing: 0.19em;
+   word-spacing: 0.09em;
 }
 
 .marker-city{
@@ -217,7 +217,8 @@ main{
    font-size: 22px;
    line-height: 36px;
    color: #FFFFFF;
-   margin-bottom: 24px;
+   margin-bottom: 22px;
+   margin-left: -8px;
 }
 
 .repair-buttons{
@@ -225,6 +226,7 @@ main{
    display: flex;
    justify-content: space-between;
    padding-left: 0;
+   margin-left: -8px;
 }
 
 button.repair-buttons__left, button.repair-buttons__right{
@@ -776,7 +778,7 @@ button.repair-buttons__left, button.repair-buttons__right{
    height: 645px;
    background:url('../Image/types/request/request.svg');
    background-size:cover;
-   padding: 117px 30px 54px 111px;
+   padding: 116px 0 54px 138px;
 }
 
 .request-left__items{
@@ -822,7 +824,7 @@ button.repair-buttons__left, button.repair-buttons__right{
    height: 509px;
    background: #131313;
    box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
-   margin: 116px 0 7px 31px;
+   margin: 111px 0 7px 105px;
    padding: 28px 49px 27px;
 
 }
@@ -837,7 +839,7 @@ button.repair-buttons__left, button.repair-buttons__right{
    line-height: 26px;
    text-align: center;
    color: #FFFFFF;
-   margin-bottom: 39px;
+   margin-bottom: 32px;
 
 }
 
@@ -849,13 +851,14 @@ button.repair-buttons__left, button.repair-buttons__right{
    font-size: 13px;
    line-height: 21px;
    color: rgba(255, 255, 255, 0.5);
-   margin-bottom: 7px;
+   margin-bottom: 4px;
+   margin-left: 1px;
 }
 
 .request-form-name__input, .request-form-phone__input, .request-form-email__input{
    background: #131313;
    border:none;
-   margin-bottom: 3px;
+   margin-bottom: 38px;
 }
 
 .request-form-name__input::placeholder, .request-form-phone__input::placeholder, .request-form-email__input::placeholder{
