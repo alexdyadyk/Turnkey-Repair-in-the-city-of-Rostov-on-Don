@@ -861,6 +861,10 @@ button.repair-buttons__left, button.repair-buttons__right{
    margin-bottom: 38px;
 }
 
+.request-form-email__input{
+   margin-bottom: 27px;
+}
+
 .request-form-name__input::placeholder, .request-form-phone__input::placeholder, .request-form-email__input::placeholder{
    font-family: var(--main-ff);
    font-style: normal;
@@ -903,7 +907,7 @@ button.repair-buttons__left, button.repair-buttons__right{
 }
 
 .request-sale{
-   margin:8px 0 0 490px;
+   margin:0 0 0 591px;
 }
 
 .request-sale-row{
@@ -921,6 +925,7 @@ button.repair-buttons__left, button.repair-buttons__right{
    line-height: 26px;
    color: #E3B873;
    text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+   margin: -7px 2px 2px 5px;
 
 }
 
@@ -932,7 +937,7 @@ button.repair-buttons__left, button.repair-buttons__right{
    background:url("../Image/fantasies/image\ 5.1.png");
    background-size:cover;
    position: relative;
-   margin: 242px 0 110px;
+   margin: 214px 0 110px 2px;
 }
 
 .section-fantasies-row{
@@ -958,7 +963,7 @@ button.repair-buttons__left, button.repair-buttons__right{
    line-height: 37px;
    text-transform: uppercase;
    color: #E3B873;
-   margin-bottom: 47px;
+   margin-bottom: 34px;
 }
 
 .fantasies-column__list{
@@ -972,7 +977,7 @@ button.repair-buttons__left, button.repair-buttons__right{
    font-size: 20px;
    line-height: 38px;
    color: #FFFFFF;
-   margin-bottom: 11px;
+   margin-bottom: 10px;
 }
 
 .fantasies-column__list li:hover{
@@ -1043,7 +1048,7 @@ button.repair-buttons__left, button.repair-buttons__right{
    display: flex;
    justify-content: space-between;
    align-items:center;
-   margin-bottom: 24px;
+   margin-bottom: 19px;
 }
 
 .clients-log{
@@ -1065,7 +1070,7 @@ button.repair-buttons__left, button.repair-buttons__right{
 
 .section-clients{
    width: 100%;
-   height: 1105px;
+   height: 961px;
    background:url('../Image/clients/clients-background.png');
    background-size:contain;
 }
@@ -1082,6 +1087,10 @@ button.repair-buttons__left, button.repair-buttons__right{
    background: #FFFFFF;
    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
    padding: 24px 32px 90px 20px;
+}
+
+.clients-row__item:nth-child(2) {
+   margin: 0 15px;
 }
 
 .clients-discription__header{
@@ -1125,7 +1134,7 @@ button.repair-buttons__left, button.repair-buttons__right{
    background: var(--button-bg-color);
    box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
    border:none;
-   margin: 63px 0 -27px -20px;
+   margin: 69px 0 -27px -20px;
    z-index: 1;
    cursor: pointer;
 }
@@ -1172,7 +1181,7 @@ button.repair-buttons__left, button.repair-buttons__right{
    text-align: center;
    text-transform: uppercase;
    color: #FFFFFF;
-   margin-bottom: 43px;
+   margin: -4px 0 43px -7px;
 }
 
 .feedback-form__row{
@@ -1193,7 +1202,7 @@ button.repair-buttons__left, button.repair-buttons__right{
    font-size: 13px;
    line-height: 21px;
    color: rgba(255, 255, 255, 0.5);
-   margin-bottom: 7px;
+   margin-bottom: 5px;
 }
 
 .feedback-form-name__input, .feedback-form-phone__input, .feedback-form-question__input{
@@ -1214,11 +1223,11 @@ button.repair-buttons__left, button.repair-buttons__right{
 
 
 .feedback-form__question{
-   margin-bottom: 36px;
+   margin-bottom: 33px;
 }
 
 .feedback-form-checkbox{
-   margin-bottom: 30px;
+   margin-bottom: 44px;
 }
 
 .feedback-form-checkbox__text{
@@ -1248,7 +1257,8 @@ button.repair-buttons__left, button.repair-buttons__right{
 
 
 .feedback-main{
-   padding: 52px 260px 65px;
+   padding-top: 52px;
+   padding-bottom: 65px;
    margin-top: -222px;
 }
 
@@ -1262,7 +1272,8 @@ button.repair-buttons__left, button.repair-buttons__right{
    background: #181818;
    position: relative;
    z-index: 1;
-   top: -222px;
+   top: -330px;
+   left: 10px;
    padding: 34px 181px;
 }
 
