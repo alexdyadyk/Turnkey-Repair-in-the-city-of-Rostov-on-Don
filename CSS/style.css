@@ -84,15 +84,15 @@ html, body{
    justify-content: space-between;
 }
 
-.header-nav{
+.header-nav, .footer-nav{
    margin-left: 0;
 }
 
-.header-nav__item{
+.header-nav__item, .footer-nav__item{
    margin-right: 55px;
 }
 
-.header-nav__item:nth-child(3){
+.header-nav__item:nth-child(3), .footer-nav__item:nth-child(3){
    margin-right: 62px;
 }
 
@@ -115,7 +115,7 @@ html, body{
    letter-spacing: 0.2px;
 }
 
-.header-tel a{
+.header-tel a, .footer-tel a{
    font-size: 11px;
 }
 
@@ -133,11 +133,11 @@ html, body{
    transition: all .4s;
 }
 
-.header-tel{
+.header-tel, .footer-tel{
    margin: 0 -4px 0 1.77%;
 }
 
-.header-tel a{
+.header-tel a, .footer-tel a{
    letter-spacing: 0.5px;
 }
 
@@ -334,7 +334,12 @@ button.repair-buttons__left, button.repair-buttons__right{
 }
 
 .projects-header{
+   width: 1062px;
    margin-bottom: 45px;
+}
+
+.projects-information{
+   margin-right: 100px;
 }
 
 .infomation_main{
@@ -862,7 +867,7 @@ button.repair-buttons__left, button.repair-buttons__right{
 }
 
 .request-form-email__input{
-   margin-bottom: 27px;
+   margin-bottom: 5px;
 }
 
 .request-form-name__input::placeholder, .request-form-phone__input::placeholder, .request-form-email__input::placeholder{
@@ -901,7 +906,7 @@ button.repair-buttons__left, button.repair-buttons__right{
    text-align: center;
    text-transform: uppercase;
    color: #FFFFFF;
-   margin-top: 39px;
+   margin-top: 35px;
    margin-left: 196px;
    cursor: pointer;
 }
@@ -1070,7 +1075,7 @@ button.repair-buttons__left, button.repair-buttons__right{
 
 .section-clients{
    width: 100%;
-   height: 961px;
+   height: 997px;
    background:url('../Image/clients/clients-background.png');
    background-size:contain;
 }
@@ -1161,7 +1166,7 @@ button.repair-buttons__left, button.repair-buttons__right{
 
 .section-feedback{
    width: 100%;
-   height: 954px;
+   height: 983px;
    background:url('../Image/feedback/image\ 7.2.png');
    position: relative;
 }
@@ -1257,7 +1262,7 @@ button.repair-buttons__left, button.repair-buttons__right{
 
 
 .feedback-main{
-   padding-top: 52px;
+   padding-top: 50px;
    padding-bottom: 65px;
    margin-top: -222px;
 }
@@ -1272,7 +1277,7 @@ button.repair-buttons__left, button.repair-buttons__right{
    background: #181818;
    position: relative;
    z-index: 1;
-   top: -330px;
+   top: -223px;
    left: 10px;
    padding: 34px 181px;
 }
@@ -1324,11 +1329,11 @@ button.repair-buttons__left, button.repair-buttons__right{
       max-width: 1091px;
    }
 
-   .header-tel{
+   .header-tel, .footer-tel{
       display: none;
    }
 
-   .header-logo {
+   .header-logo, .footer-logo {
       margin: 0 85px 0 0;
    }
 
@@ -1376,7 +1381,7 @@ button.repair-buttons__left, button.repair-buttons__right{
    }
 
 
-   .header-nav, .button-header, .header-tel{
+   .header-nav, .button-header, .header-tel, .footer-nav, .button-footer, .footer-tel{
       display: none;
    }
 
@@ -1458,7 +1463,7 @@ button.repair-buttons__left, button.repair-buttons__right{
       max-width: 580px;
    }
 
-   .header-logo{
+   .header-logo, .footer-logo{
       margin:0 205px 0 0;
    }
 
@@ -1483,14 +1488,14 @@ button.repair-buttons__left, button.repair-buttons__right{
       max-width: 420px;
    }
 
-   .header{
+   .header, .footer{
       padding: 23px 1px;
       display: flex;
       justify-content: space-between;
       align-items:center;
    }
 
-   .header-logo{
+   .header-logo, .footer-logo{
       margin:0 185px 0 0;
    }
 
@@ -1521,7 +1526,7 @@ button.repair-buttons__left, button.repair-buttons__right{
    
    /* header */
 
-   .header{
+   .header, .footer{
       height: 87px;
       padding: 23px 18px;
       display: flex;
@@ -1529,21 +1534,21 @@ button.repair-buttons__left, button.repair-buttons__right{
       align-items:center;
    }
 
-   .header-logo {
+   .header-logo, .footer-logo {
       width: 175px;
       margin:0 30px 0 0;
    }
 
-   .header-tel {
+   .header-tel, .footer-tel {
       width: 95px;
    }
 
-   .header-nav, .button-header{
+   .header-nav, .button-header, .footer-nav, .button-footer{
       display: none;
    }
 
 
-   .header-logo a, .header-tel a{
+   .header-logo a, .header-tel a, .footer-logo a, .footer-tel a{
       font-size: 10px;
    }
 
@@ -1551,7 +1556,7 @@ button.repair-buttons__left, button.repair-buttons__right{
       display: none;
    }
 
-   .header-tel{
+   .header-tel, .footer-tel{
       display: block;
    }
 
