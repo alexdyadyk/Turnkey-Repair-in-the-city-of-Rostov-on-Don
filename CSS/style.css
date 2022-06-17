@@ -92,6 +92,10 @@ html, body{
    margin-right: 55px;
 }
 
+.footer-nav__item{
+   letter-spacing: 0.015rem;
+}
+
 .header-nav__item:nth-child(3), .footer-nav__item:nth-child(3){
    margin-right: 62px;
 }
@@ -162,6 +166,10 @@ button.button-header, button.button-footer{
    cursor:pointer;
    padding: 13px 2.66%;
    margin: 0 -8px 0 4.04%;
+}
+
+button.button-footer{
+   margin: -2px 3px 0 49px;
 }
 
 .header-burger{
@@ -288,7 +296,7 @@ button.repair-buttons__left, button.repair-buttons__right{
    margin: 0 30px;
 }
 
-.projects-header_item{
+.projects-header__item{
    text-decoration: none;
    font-family: var(--second-ff);
    font-style: normal;
@@ -299,16 +307,16 @@ button.repair-buttons__left, button.repair-buttons__right{
    color: rgba(255, 255, 255, 0.3);
 }
 
-.projects-header_item:nth-child(2){
+.projects-header__item:nth-child(2){
    margin: 0 15px 0 10px;
 }
 
 
-.projects-header_item:hover{
+.projects-header__item:hover{
    color:var(--text-color);
 }
 
-.projects-header_item::after{
+.projects-header__item::after{
    content:'';
    display: block;
    width: 0;
@@ -318,7 +326,7 @@ button.repair-buttons__left, button.repair-buttons__right{
    transition: width .4s ease-out;
 }
 
-.projects-header_item:hover::after{
+.projects-header__item:hover::after{
    width: 100%;
    transition: width .4s ease-out;
 }
@@ -339,10 +347,10 @@ button.repair-buttons__left, button.repair-buttons__right{
 }
 
 .projects-information{
-   margin-right: 100px;
+   margin: 0 -31px 0 -100px;
 }
 
-.infomation_main{
+.infomation__main{
    width: 256px;
    font-family:var(--second-ff);
    font-style: normal;
@@ -371,15 +379,15 @@ button.repair-buttons__left, button.repair-buttons__right{
 }
 
 .projects-img img{
-   max-width: 679px;
-   height: 482px;
+   max-width: 734px;
+   height: 566px;
 }
 
 .projects-img__subtext{
    display: none;
 }
 
-.discription__row1, .discription_row2{
+.discription__row1, .discription__row2{
    display: flex;
    
 }
@@ -388,12 +396,12 @@ button.repair-buttons__left, button.repair-buttons__right{
    margin-bottom: 54px;
 }
 
-.discription_item{
+.discription__item{
    margin-left: 0;
    text-align: left;
 }
 
-.discription_item:nth-child(2){
+.discription__item:nth-child(2){
    margin-left: -57px;
 }
 
@@ -402,7 +410,7 @@ button.repair-buttons__left, button.repair-buttons__right{
 }
 
 
-.discription_item h3{
+.discription__item h3{
    font-family: var(--second-ff);
    font-style: normal;
    font-weight: 400;
@@ -413,7 +421,7 @@ button.repair-buttons__left, button.repair-buttons__right{
    margin-bottom: 7px;
 }
 
-.discription_item{
+.discription__item{
    font-family: var(--main-ff);
    font-style: normal;
    font-weight: 400;
@@ -428,7 +436,7 @@ button.repair-buttons__left, button.repair-buttons__right{
 
 
 
-.information-slaider_switch{
+.information-slaider__switch{
    margin: 0 25px;
 }
 
@@ -462,7 +470,7 @@ button.repair-buttons__left, button.repair-buttons__right{
    align-items:center;
 }
 
-.control_camera{
+.control__camera{
    margin: 0 10px;
 }
 
@@ -482,10 +490,12 @@ button.repair-buttons__left, button.repair-buttons__right{
    position: relative;
 }
 
-.control_play{
+.control__play{
    position: absolute;
-   top: 149px;
-   left: 336px;  
+   /* top: 149px;
+   left: 336px;   */
+   top: calc(149 / 434 * 100%);
+   left: calc(336 / 817 * 100%);
    z-index: 1;
 }
 
@@ -504,7 +514,7 @@ button.repair-buttons__left, button.repair-buttons__right{
 }
 
 .control-text{
-   width: calc(640 / 1236 * 100%);
+   max-width: 640px;
    margin-bottom: 75px;
 }
 
@@ -518,7 +528,7 @@ button.repair-buttons__left, button.repair-buttons__right{
    color: #363636;
 }
 
-.form-items_row{
+.form-items__row{
    display: flex;
    justify-content: center;
    align-items:center;
@@ -540,7 +550,7 @@ button.repair-buttons__left, button.repair-buttons__right{
 
 
 
-.form-item_supname, .form-item_supphone{
+.form-item__supname, .form-item__supphone{
    font-family: var(--main-ff);
    font-style: normal;
    font-weight: 400;
@@ -549,28 +559,28 @@ button.repair-buttons__left, button.repair-buttons__right{
    color: rgba(54, 54, 54, 0.5);
 }
 
-.form-item_supname{
+.form-item__supname{
    margin: 4px 0 4px -4px;
 }
 
-.form-item_supphone{
+.form-item__supphone{
    margin: 4px 0 4px 4px;
 }
 
-.form-item_name, .form-item_phone{
+.form-item__name, .form-item__phone{
    border:none;
 }
 
-.form-item_name{
+.form-item__name{
    margin: 0 0 8px -2px;
 }
 
-.form-item_phone{
+.form-item__phone{
    margin: 0 0 8px 5px;
 }
 
 
-.form-item_name::placeholder, .form-item_phone::placeholder{
+.form-item__name::placeholder, .form-item__phone::placeholder{
    font-family: var(--main-ff);
    font-style: normal;
    font-weight: 400;
@@ -599,6 +609,7 @@ button.repair-buttons__left, button.repair-buttons__right{
    cursor: pointer;
    margin-top: 5px;
 }
+
 
 .form-checkbox{
    display: flex;
@@ -689,36 +700,36 @@ button.repair-buttons__left, button.repair-buttons__right{
 }
 
 
-.types-row_item{
+.types-row__item{
    margin-right: 20px;
 }
 
 
 
-.types-row_item:last-child{
+.types-row__item:last-child{
    margin-right: 0;
 }
 
 
-.types-item_backgroundleft{
+.types-item__backgroundleft{
    width: 392px;
    height: 421px;
    background:url('../Image/types/types1.png')
 }
 
-.types-item_backgroundmidlle{
+.types-item__backgroundmidlle{
    width: 392px;
    height: 421px;
    background:url('../Image/types/types2.png')
 }
 
-.types-item_backgroundright{
+.types-item__backgroundright{
    width: 392px;
    height: 421px;
    background:url('../Image/types/types3.png')
 }
 
-.types-item_discription{
+.types-item__discription{
    width: 330px;
    height: 286px;
    background: #FFFFFF;
@@ -739,7 +750,7 @@ button.repair-buttons__left, button.repair-buttons__right{
 
 
 
-.types-discription_list li{
+.types-discription__list li{
    list-style: disc;
    font-family: var(--main-ff);
    font-style: normal;
@@ -1272,14 +1283,16 @@ button.repair-buttons__left, button.repair-buttons__right{
 }
 
 .feedback-form{
-   width: 883px;
+   /* width: 883px; */
+   width: 71.44%;
    height: 445px;
    background: #181818;
    position: relative;
    z-index: 1;
    top: -223px;
    left: 10px;
-   padding: 34px 181px;
+   /* padding: 34px 181px; */
+   padding: 2.75% 14.64%;
 }
 
 .feedback-form-main{
@@ -1293,7 +1306,7 @@ button.repair-buttons__left, button.repair-buttons__right{
 }
 
 .feedback-main__header{
-   width: 589px;
+   max-width: 589px;
    font-family: var(--main-ff);
    font-style: normal;
    font-weight: 400;
@@ -1338,6 +1351,14 @@ button.repair-buttons__left, button.repair-buttons__right{
    }
 
 
+   .projects-img img{
+      height: 480px;
+   }
+
+   .infomation__text{
+      margin-left: 0;
+   }
+
    .projects-main{
       display: flex;
       flex-direction: column-reverse;
@@ -1350,6 +1371,10 @@ button.repair-buttons__left, button.repair-buttons__right{
 
    .projects-row{
       padding: 50px 134px 414px;
+   }
+
+   .projects-header__item{
+      display: none;
    }
 
 
@@ -1371,6 +1396,52 @@ button.repair-buttons__left, button.repair-buttons__right{
 
    .information-slaider {
       margin-top: 40px;
+   }
+
+   /* section-types */
+
+   .types-row{
+      padding: 0 70px;
+   }
+
+   .types-row__item {
+      margin-bottom: 80px;
+   }
+
+   .request-row{
+      flex-direction: column;
+   }
+
+   .request-form{
+      /* width: 506px;
+      height: 509px; */
+      margin: 111px 0;
+      padding: 28px 49px 27px;
+   
+   }
+
+
+
+   /* section-fantasies */
+
+   .section-fantasies-column__middle, .section-fantasies-column__right {
+      display: none;
+   }
+
+   /* section-clients */
+
+   .clients-row__item {
+      margin-bottom: 50px;
+   }
+
+
+   .section-clients{
+      height: auto;
+   }
+
+   .clients-row__item:nth-child(2) {
+      margin: 0 auto;
+      margin-bottom: 50px;
    }
    
 }
@@ -1422,6 +1493,28 @@ button.repair-buttons__left, button.repair-buttons__right{
       font-size: 35px;
    }
 
+   /* section-feedback */
+
+   .feedback-form__name img, .feedback-form__phone img, .feedback-form__question img{
+      width: 100%;
+   }
+
+   .feedback-form__row{
+      flex-wrap: wrap;
+   }
+
+   .feedback-form__phone{
+      margin-left: 0;
+   }
+
+   .feedback-form__question{
+      margin-bottom: 10px;
+   }
+
+   .feedback-form-checkbox{
+      margin-bottom: 15px;
+   }
+
 
 }
 
@@ -1440,11 +1533,15 @@ button.repair-buttons__left, button.repair-buttons__right{
       font-size: 30px;
    }
 
+   /* section-projects */
+
+   .projects-img img{
+      height: 440px;
+   }
+
    /* section-control */
 
-   .form-items_row{
-      display: block;
-   }
+
 
    /* section-types */
 
@@ -1455,6 +1552,29 @@ button.repair-buttons__left, button.repair-buttons__right{
    .projects-row{
       padding: 105px 74px 414px;
    }
+
+   .types-row{
+      padding: 0 150px;
+   }
+
+   .request-row__left, .request-row__right{
+      padding: 116px 0 54px;
+      margin: 0 auto;
+   }
+
+   .request-form{
+      /* margin: 50px auto; */
+      padding: 28px 49px 27px;
+   
+   }
+
+   .request-sale{
+      margin:0;
+   }
+
+   /* section-feedback */
+
+   
 
 }
 
@@ -1475,8 +1595,28 @@ button.repair-buttons__left, button.repair-buttons__right{
       font-size: 30px;
    }
 
+   .projects-row{
+      padding: 95px 50px 300px;
+   }
+
    .projects-img img{
       height: auto;
+   }
+
+   /* section-control */
+
+   .form-items__row{
+      display: block;
+   }
+
+   .form-item {
+      margin-bottom: 20px;
+   }
+
+   /* section-types */
+
+   .types-row{
+      padding: 0 100px;
    }
 
 
@@ -1499,6 +1639,14 @@ button.repair-buttons__left, button.repair-buttons__right{
       margin:0 185px 0 0;
    }
 
+   .projects-row{
+      padding: 85px 35px 250px;
+   }
+
+   .infomation__text{
+      width: 356px;
+   }
+
    .repair-header {
       width: 400px;
       font-size: 27px;
@@ -1518,6 +1666,22 @@ button.repair-buttons__left, button.repair-buttons__right{
       width: 338px;
       max-width: 100%;
       margin: 0 0 30px 0;
+   }
+
+   /* section-types */
+
+   .types-row{
+      padding: 0 30px;
+   }
+
+   /* section-feedback */
+
+   .feedback-form__row{
+      margin-bottom: 15px;
+   }
+
+   .feedback-form__header{
+      margin-bottom: 32px;
    }
    
 }
@@ -1650,12 +1814,6 @@ button.repair-buttons__left, button.repair-buttons__right{
       margin: 0 20px 0 0;
    }
 
-   /* .infomation_main{
-      width: 135px;
-      font-size: 22px;
-      line-height: 138.6%;
-      text-align: center;
-   } */
 
    .infomation__text{
       width: 301px;
@@ -1688,11 +1846,11 @@ button.repair-buttons__left, button.repair-buttons__right{
       max-width: 100%;
    }
 
-   .discription_item{
+   .discription__item{
       margin-right: 51px;
    }
 
-   .discription_item h3{
+   .discription__item h3{
       font-size: 14px;
       line-height: 138.6%;
       margin-bottom: 11px;
@@ -1732,7 +1890,7 @@ button.repair-buttons__left, button.repair-buttons__right{
       margin-bottom: 28px;
    }
 
-   .control_play{
+   .control__play{
       position: absolute;
       top: 22.67vw;
       left: 40.53vw;  
@@ -1760,21 +1918,21 @@ button.repair-buttons__left, button.repair-buttons__right{
       color: #FFFFFF;;
    }
 
-   .form-items_row{
+   .form-items__row{
       display: block;
    }
 
-   .form-item_supname, .form-item_supphone{
+   .form-item_supname, .form-item__supphone{
       color: rgba(255, 255, 255, 0.5);
    }
 
    
-   .form-item_name, .form-item_phone{
+   .form-item__name, .form-item__phone{
       margin: 0 0 8px 0;
       border:none;
    }
    
-   .form-item_name::placeholder, .form-item_phone::placeholder{
+   .form-item__name::placeholder, .form-item__phone::placeholder{
       line-height: 138.72%;
       color: #FFFFFF;
       background: #131313;
@@ -1839,25 +1997,25 @@ button.repair-buttons__left, button.repair-buttons__right{
       margin-bottom: 40px;
    }
 
-   .types-discription, .types-discription_list{
+   .types-discription, .types-discription__list{
       text-align: left;
    }
 
 
-   .types-row_item{
+   .types-row__item{
       text-align: center;
    }
 
-   .types-row_item{
+   .types-row__item{
       margin-bottom: 15.73vw;
    }
 
-   .types-item_backgroundleft, .types-item_backgroundmidlle, .types-item_backgroundright{
+   .types-item__backgroundleft, .types-item__backgroundmidlle, .types-item__backgroundright{
       width: 90.67vw;
       margin-bottom: 177px;
    }
 
-   .types-item_discription{
+   .types-item__discription{
       width: 270px;
       height: 241px;
       margin-left: 0;
@@ -1865,7 +2023,7 @@ button.repair-buttons__left, button.repair-buttons__right{
    }
 
 
-   .types-discription_list li{
+   .types-discription__list li{
       line-height: 169.8%;;
    }
 
